@@ -1,0 +1,22 @@
+/* ## Site description
+--------------------------------------------- */
+
+.site-description {
+  font-size: rem( $siteDescription__fontSize );
+  font-weight: $siteDescription__fontWeight;
+  line-height: 1.5;
+}
+
+.site-description,
+.site-title {
+  margin-bottom: 0;
+
+  .header-image & {
+    display: block;
+    text-indent: -9999px;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    text-align: center;
+  }
+}

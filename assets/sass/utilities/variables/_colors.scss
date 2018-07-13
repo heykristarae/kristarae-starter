@@ -1,0 +1,50 @@
+$white: #fff;
+$black: #000;
+$gray: #eee;
+
+$primary__color: #fe0e7b;
+$secondary__color: #feb142;
+
+$link__color: $primary_color;
+$link__hoverColor: $secondary_color;
+
+$body__backgroundColor: $white;
+
+// Header
+$siteHeader_backgroundColor: $white;
+$siteTitle__linkColor: $black;
+
+// Navigation Colors
+$nav__linkColor: $black;
+$nav__linkHoverColor: #c3251d;
+
+$subMenu__linkBackgroundColor: $white;
+$subMenu__borderColor: $gray;
+
+$primaryNav__linkColor: $black;
+$primaryNav__backgroundColor: $white;
+$primaryNav__borderColor: $gray;
+
+$secNav__linkColor: $black;
+$secNav__linkHoverColor: $nav__linkHoverColor;
+$secNav__backgroundColor: $white;
+$secNav__borderColor: $gray;
+
+$jsNav__backgroundColor: $white;
+$jsNav__linkHoverColor: $black;
+$jsNav__linkFocusColor: #c3251d;
+
+$toggle__backgroundColor: $white;
+$toggle__color: $black;
+$toggle__borderColor: $gray;
+
+$pagination_backgroundColor: $white;
+$pagination_backgroundHoverColor: #c3251d;
+$pagination_linkColor: $black;
+$pagination_linkHoverColor: $white;
+
+
+// Footer
+
+$siteFooter__backgroundColor: $white;
+$footer_Widgets_backgroundColor: $white;

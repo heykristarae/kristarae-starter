@@ -1,0 +1,19 @@
+//
+// Header base styles
+//========================
+
+.site-header {
+  background-color: $siteHeader_backgroundColor;
+
+  > .wrap {
+    padding: 20px 0;
+  }
+
+  @media only screen and (max-width: 1023px) {
+
+    .wrap {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}

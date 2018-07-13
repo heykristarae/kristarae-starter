@@ -1,0 +1,28 @@
+/*!
+	Theme Name: Krista Rae Starter
+	Theme URI: https://kristarae.co/
+	Description: This is the Genesis-powered starter theme used for Krista Rae LLC
+	Author: Krista Rae
+	Author URI: https://kristarae.co/
+
+	Version: 1.0.0
+    Text Domain: kristarae-starter
+
+	Template: genesis
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "base/index";
+@import "layouts/index";
+@import "common-classes/index";
+@import "components/widgets/index";
+@import "plugins/index";
+@import "components/accessibility/index";
+@import "components/header/index";
+@import "components/navigation/index";
+@import "components/content/index";
+@import "components/comments/index";
+@import "components/sidebar/index";
+@import "components/footer/index";
