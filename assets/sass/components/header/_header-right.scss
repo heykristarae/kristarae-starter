@@ -7,7 +7,7 @@
   width: $headerRight__width;
 
   @media only screen and (max-width: 1200px) {
-    width: $headerRight__mediumScreen__width;
+    width: $headerRight__width__largeScreen;
   }
 
   @media only screen and (max-width: 1023px) {
