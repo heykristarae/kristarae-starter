@@ -1,0 +1,20 @@
+//
+// Entry header meta
+//======================
+
+.entry-header {
+  .entry-meta {
+    font-size: rem( $entryMeta__header__fontSize );
+    margin-bottom: 0;
+  }
+
+  .entry-categories,
+  .entry-tags {
+    display: block;
+  }
+
+  .entry-comments-link::before {
+    content: "\2014";
+    margin: 0 6px 0 2px;
+  }
+}
