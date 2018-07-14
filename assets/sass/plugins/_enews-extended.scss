@@ -2,6 +2,8 @@
 --------------------------------------------- */
 
 .sidebar .enews-widget {
+  background-color: $enews__backgroundColor;
+
   &,
   .widget-title {
     color: $white;
@@ -10,30 +12,25 @@
   input {
     &,
     &:focus {
-      border: 1px solid #333;
+      border: 1px solid $enews__input__borderColor;
     }
 
     &[type="submit"] {
-      background-color: #c3251d;
-      color: #fff;
+      background-color: $enews__buttonColor;
+      color: $enews__buttonTextColor;
     }
 
     &:hover[type="submit"],
     &:focus[type="submit"] {
-      background-color: #fff;
-      color: #333;
+      background-color: $enews__buttonHoverColor;
+      color: $enews__buttonTextHoverColor;
     }
   }
 }
 
-.sidebar .widget.enews-widget {
-  background-color: #333;
-}
-
 .enews-widget {
   input {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: rem( $enews__fontSize );
     margin-bottom: 16px;
 
     &[type="submit"] {

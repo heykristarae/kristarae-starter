@@ -10,9 +10,18 @@ $link__hoverColor: $secondary_color;
 
 $body__backgroundColor: $white;
 
+
+// Buttons
+$button__backgroundColor: $primary__color;
+$button__backgroundHoverColor: $secondary__color;
+$button__textColor: $white;
+$button__textHoverColor: $white;
+
+
 // Header
 $siteHeader_backgroundColor: $white;
 $siteTitle__linkColor: $black;
+
 
 // Navigation Colors
 $nav__linkColor: $black;
@@ -56,13 +65,26 @@ $entryTitle_linkHoverColor: #c3251d;
 $code__backgroundColor: $black;
 $code__color: $gray;
 
+
 // Comments
 
 $comments_backgroundColor: $white;
 
+
 // Widgets
 
 $sidebar__widgetTitle__linkColor: $black;
+
+
+// Plugins
+
+$enews__input__borderColor: $white;
+$enews__backgroundColor: $gray;
+$enews__buttonColor: $button__backgroundColor;
+$enews__buttonHoverColor: $button__backgroundHoverColor;
+$enews__buttonTextColor: $button__textColor;
+$enews__buttonTextHoverColor: $button__textHoverColor;
+
 
 // Footer
 
