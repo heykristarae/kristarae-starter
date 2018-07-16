@@ -2,10 +2,14 @@
 
 .sidebar-primary {
   float: right;
-  width: 360px;
-}
+  width: $primarySidebar__width;
 
-.sidebar-content .sidebar-primary,
-.sidebar-sidebar-content .sidebar-primary {
-  float: left;
+  @media only screen and (max-width: $larger-screen) {
+    width: $primarySidebar__largerScreen__width;
+  }
+
+  .sidebar-content &,
+  .sidebar-sidebar-content & {
+    float: left;
+  }
 }
