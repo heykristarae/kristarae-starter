@@ -14,4 +14,9 @@
     display: block;
     margin-right: 12px;
   }
+
+  @media only screen and (max-width: 860px) {
+    padding: 30px;
+    margin-bottom: 5%;
+  }
 }

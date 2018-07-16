@@ -1,0 +1,31 @@
+//
+// Body styling
+//==============
+
+html {
+  font-size: $html__fontSize;
+}
+
+body {
+  background-color: $body__backgroundColor;
+  color: $base__color;
+  font-family: $base__fontFamily;
+  font-size: rem( $base__fontSize );
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: $base__lineHeight;
+  margin: 0;
+  /* Chro__me fix */
+
+  @media screen and (max-width: $small-screen) {
+      font-size: rem( $base__fontSize__smallScreen );
+  }
+
+  > div {
+    font-size: $baseDiv__fontSize;
+
+    @media screen and (max-width: $small-screen) {
+      font-size: $baseDiv__fontSize__smallScreen;
+    }
+  }
+}

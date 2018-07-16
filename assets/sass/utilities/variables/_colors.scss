@@ -1,3 +1,7 @@
+//
+// Color variables
+//=================================
+
 $white: #fff;
 $black: #000;
 $gray: #eee;
@@ -8,8 +12,36 @@ $secondary__color: #feb142;
 $link__color: $primary_color;
 $link__hoverColor: $secondary_color;
 
+$base__color: $black;
 $body__backgroundColor: $white;
 
+// Form elements
+$input__backgroundColor: $white;
+$input__textColor: $black;
+$input__borderColor: #ddd;
+$input__borderFocusColor: $input__borderColor;
+$input__placeholder__textColor: $black;
+
+// Buttons
+
+$button__backgroundColor: $primary__color;
+$button__backgroundTextColor: $white;
+$button__backgroundHoverColor: $secondary__color;
+$button__backgroundHoverTextColor: $white;
+$button__disabled__backgroundColor: $gray;
+$button__disabled__backgroundTextColor: #777;
+
+// Elements
+$searchInput__backgroundColor: $input__backgroundColor;
+$searchInput__textColor: $input__textColor;
+
+$hr__borderColor: $gray;
+
+$gallery__borderColor: $gray;
+$gallery__borderHoverColor: #999;
+
+$table__body__borderColor: $gray;
+$table__cell__borderColor: $gray;
 
 // Buttons
 $button__backgroundColor: $primary__color;
@@ -85,6 +117,12 @@ $enews__buttonHoverColor: $button__backgroundHoverColor;
 $enews__buttonTextColor: $button__textColor;
 $enews__buttonTextHoverColor: $button__textHoverColor;
 
+// General Components
+
+$authorbox__backgroundColor: $white;
+$breadrumb__backgroundColor: $white;
+$afterEntry__backgroundColor: $white;
+$archiveDescription__backgroundColor: $white;
 
 // Footer
 

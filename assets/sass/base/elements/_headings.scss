@@ -6,38 +6,57 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
+  font-family: $headings__fontFamily;
+  font-weight: $headings__fontWeight;
+  letter-spacing: $headings__letterSpacing;
+  line-height: $headings__lineHeight;
   margin: 0 0 10px;
 }
 
 h1 {
-  font-size: 36px;
-  font-size: 3.6rem;
+  font-family: $h1__fontFamily;
+  font-size: rem( $h1__fontSize );
+  font-weight: $h1__fontWeight;
+  letter-spacing: $h1__letterSpacing;
+  line-height: $h1__lineHeight;
 }
 
 h2 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-family: $h2__fontFamily;
+  font-size: rem( $h2__fontSize );
+  font-weight: $h2__fontWeight;
+  letter-spacing: $h2__letterSpacing;
+  line-height: $h2__lineHeight;
 }
 
 h3 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-family: $h3__fontFamily;
+  font-size: rem( $h3__fontSize );
+  font-weight: $h3__fontWeight;
+  letter-spacing: $h3__letterSpacing;
+  line-height: $h3__lineHeight;
 }
 
 h4 {
-  font-size: 20px;
-  font-size: 2rem;
+  font-family: $h4__fontFamily;
+  font-size: rem( $h4__fontSize );
+  font-weight: $h4__fontWeight;
+  letter-spacing: $h4__letterSpacing;
+  line-height: $h4__lineHeight;
 }
 
 h5 {
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-family: $h5__fontFamily;
+  font-size: rem( $h5__fontSize );
+  font-weight: $h5__fontWeight;
+  letter-spacing: $h5__letterSpacing;
+  line-height: $h5__lineHeight;
 }
 
 h6 {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-family: $h6__fontFamily;
+  font-size: rem( $h6__fontSize );
+  font-weight: $h6__fontWeight;
+  letter-spacing: $h6__letterSpacing;
+  line-height: $h6__lineHeight;
 }

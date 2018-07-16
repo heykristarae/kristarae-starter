@@ -1,0 +1,15 @@
+//
+// After entry base styles
+//==========================
+
+.after-entry {
+  background-color: $afterEntry__backgroundColor;
+  font-size: rem( $afterEntry__fontSize );
+  margin-bottom: 40px;
+  padding: 60px;
+
+  @media only screen and (max-width: 860px) {
+    padding: 30px;
+    margin-bottom: 5%;
+  }
+}

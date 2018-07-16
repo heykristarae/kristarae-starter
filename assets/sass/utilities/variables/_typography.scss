@@ -1,44 +1,115 @@
+//
+// Typography variables
+//=================================
+
+// Base typography
+$html__fontSize: 62.5%; /* 10px browser default */
+$base__fontFamily: "Source Sans Pro", sans-serif;
+$base__fontSize: 20;
+$base__fontSize__smallScreen: 18;
+$base__lineHeight: 1.625;
+$baseDiv__fontSize: 2em;
+$baseDiv__fontSize__smallScreen: 1.8rem;
+
+// Headings
+$headings__fontFamily: $baseFontFamily;
+$headings__fontWeight: 600;
+$headings__letterSpacing: 0;
+$headings__lineHeight: 1.2;
+
+$h1__fontFamily: $headings__fontFamily;
+$h1__fontWeight: $headings__fontWeight;
+$h1__fontSize: 36;
+$h1__letterSpacing: $headings__letterSpacing;
+$h1__lineHeight: $headings__lineHeight;
+
+$h2__fontFamily: $headings__fontFamily;
+$h2__fontWeight: $headings__fontWeight;
+$h2__fontSize: 30;
+$h2__letterSpacing: $headings__letterSpacing;
+$h2__lineHeight: $headings__lineHeight;
+
+$h3__fontFamily: $headings__fontFamily;
+$h3__fontWeight: $headings__fontWeight;
+$h3__fontSize: 24;
+$h3__letterSpacing: $headings__letterSpacing;
+$h3__lineHeight: $headings__lineHeight;
+
+$h4__fontFamily: $headings__fontFamily;
+$h4__fontWeight: $headings__fontWeight;
+$h4__fontSize: 20;
+$h4__letterSpacing: $headings__letterSpacing;
+$h4__lineHeight: $headings__lineHeight;
+
+$h5__fontFamily: $headings__fontFamily;
+$h5__fontWeight: $headings__fontWeight;
+$h5__fontSize: 18;
+$h5__letterSpacing: $headings__letterSpacing;
+$h5__lineHeight: $headings__lineHeight;
+
+$h6__fontFamily: $headings__fontFamily;
+$h6__fontWeight: $headings__fontWeight;
+$h6__fontSize: 16;
+$h6__letterSpacing: $headings__letterSpacing;
+$h6__lineHeight: $headings__lineHeight;
+
+// Elements
+$blockquote__fontSize: 30;
+
+// Form elements
+$input__fontSize: 18;
+$input__fontWeight: 400;
+
+// Buttons
+$button__fontSize: 16;
 
 // Header
-
 $siteTitle__fontSize: 30;
 $siteTitle__fontWeight: 700;
 
 $siteDescription__fontSize: 16;
 $siteDescription__fontWeight: 400;
 
-// Navigation
 
+// Navigation
 $nav__fontSize: 16;
 $nav__fontWeight: 600;
 $submenu__fontSize: 14;
 $pagination__fontSize: 16;
 $pagination__fontWeight: 600;
 
-// Entry Content
 
+// Entry Content
 $entryMeta__fontSize: 16;
 $entryMeta__header__fontSize: 16;
 $entryMeta__footer__fontSize: 16;
 
 $entryTitle__fontSize: 36;
 
-// Comments
 
+// Comments
 $comments_fontSize: 16;
 
-// Widgets
 
+// Widgets
 $widgetTitle__fontSize: 18;
 
 $featuredContent__entryTitle__fontSize: 20;
 
-// Plugins
 
+// Plugins
 $enews__fontSize: 16;
 
 
-// Footer
+// General Components
+$authorbox__fontSize: 18;
+$authorbox__title__fontSize: 20;
+$breadrumb__fontSize: 16;
+$afterEntry__fontSize: 18;
+$archive__title__fontSize: 18;
+$archiveDescription__fontSize: 18;
 
+
+// Footer
 $siteFooter__fontSize: 16;
 $footerWidgets__fontSize: 18;
