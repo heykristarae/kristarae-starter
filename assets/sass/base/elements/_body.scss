@@ -10,7 +10,7 @@ body {
   background-color: $body--background-color;
   color: $base-color;
   font-family: $base--font-family;
-  font-size: rem( $base--font-size );
+  @include rem( font-size, $base--font-size );
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: $base--line-height;
@@ -18,14 +18,14 @@ body {
   /* Chro__me fix */
 
   @media screen and (max-width: $small-screen) {
-      font-size: rem( $base--font-size--small-screen );
+      @include rem( font-size, $base--font-size--small-screen );
   }
 
-  > div {
+  /*> div {
     font-size: $base__div--font-size;
 
     @media screen and (max-width: $small-screen) {
       font-size: $base__div--font-size--small-screen;
     }
-  }
+  }*/
 }

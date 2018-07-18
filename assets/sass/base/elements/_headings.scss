@@ -15,7 +15,7 @@ h6 {
 
 h1 {
   font-family: $h1--font-family;
-  font-size: rem( $h1--font-size );
+  @include rem( font-size, $h1--font-size );
   font-weight: $h1--font-weight;
   letter-spacing: $h1--letter-spacing;
   line-height: $h1--line-height;
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
   font-family: $h2--font-family;
-  font-size: rem( $h2--font-size );
+  @include rem( font-size, $h2--font-size );
   font-weight: $h2--font-weight;
   letter-spacing: $h2--letter-spacing;
   line-height: $h2--line-height;
@@ -31,7 +31,7 @@ h2 {
 
 h3 {
   font-family: $h3--font-family;
-  font-size: rem( $h3--font-size );
+  @include rem( font-size, $h3--font-size );
   font-weight: $h3--font-weight;
   letter-spacing: $h3--letter-spacing;
   line-height: $h3--line-height;
@@ -39,7 +39,7 @@ h3 {
 
 h4 {
   font-family: $h4--font-family;
-  font-size: rem( $h4--font-size );
+  @include rem( font-size, $h4--font-size );
   font-weight: $h4--font-weight;
   letter-spacing: $h4--letter-spacing;
   line-height: $h4--line-height;
@@ -47,7 +47,7 @@ h4 {
 
 h5 {
   font-family: $h5--font-family;
-  font-size: rem( $h5--font-size );
+  @include rem( font-size, $h5--font-size );
   font-weight: $h5--font-weight;
   letter-spacing: $h5--letter-spacing;
   line-height: $h5--line-height;
@@ -55,7 +55,7 @@ h5 {
 
 h6 {
   font-family: $h6--font-family;
-  font-size: rem( $h6--font-size );
+  @include rem( font-size, $h6--font-size );
   font-weight: $h6--font-weight;
   letter-spacing: $h6--letter-spacing;
   line-height: $h6--line-height;

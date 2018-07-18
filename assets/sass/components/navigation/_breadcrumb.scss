@@ -4,7 +4,7 @@
 
 .breadcrumb {
   background-color: $breadrumb--background-color;
-  font-size: rem( $breadrumb--font-size );
+  @include rem( font-size, $breadrumb--font-size );
   margin-bottom: 1px;
   padding: 12px 30px;
 }

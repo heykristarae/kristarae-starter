@@ -22,7 +22,7 @@
     width: $content-both-sidebars--width;
 
     @media only screen and (max-width: $larger-screen) {
-      width: $content-both-sidebars--larger-screen--width;
+      width: $content-both-sidebars--width-larger-screen;
     }
 
     @media only screen and (max-width: $large-screen) {

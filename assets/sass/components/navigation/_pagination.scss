@@ -30,7 +30,7 @@
     color: $pagination--link-color;
     cursor: pointer;
     display: inline-block;
-    font-size: rem( 16 );
+    @include rem( font-size, 16 );
     font-weight: $pagination--font-weight;
     padding: 8px 12px;
     text-decoration: none;

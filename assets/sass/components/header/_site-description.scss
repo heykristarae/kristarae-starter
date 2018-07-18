@@ -2,7 +2,7 @@
 --------------------------------------------- */
 
 .site-description {
-  font-size: rem( $site-description--font-size );
+  @include rem( font-size, $site-description--font-size );
   font-weight: $site-description--font-weight;
   line-height: 1.5;
 }

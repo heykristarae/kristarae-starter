@@ -1,0 +1,32 @@
+{
+  "name": "kristarae-starter",
+  "version": "1.0.0",
+  "description": "This is a developer-friendly starter child theme for the Genesis framework for \r [Krista Rae LLC](https://kristarae.co). It includes Sass, gulp, Bourbon, Neat, and Composer.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heykristarae/kristarae-starter.git"
+  },
+  "author": "Krista Rae LLC",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/heykristarae/kristarae-starter/issues"
+  },
+  "homepage": "https://github.com/heykristarae/kristarae-starter#readme",
+  "dependencies": {
+    "npm": "^6.2.0",
+    "sass-rem": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "sass-rem": "^2.0.1"
+  }
+}
