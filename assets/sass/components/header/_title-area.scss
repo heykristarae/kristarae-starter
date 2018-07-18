@@ -4,9 +4,9 @@
 .title-area {
   float: left;
   padding: 10px 0;
-  width: $titleArea_width;
+  width: $title-area--width;
 
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: $medium-screen) {
     text-align: center;
     width: 100%;
   }
@@ -14,10 +14,10 @@
 
 .header-image .title-area {
   margin: 0 auto;
-  max-width: $titleArea_width;
+  max-width: $title-area--width;
   padding: 0;
 
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: $medium-screen) {
     float: none;
   }
 }
@@ -28,14 +28,14 @@
 }
 
 .site-title {
-  font-size: rem( $siteTitle__fontSize );
-  font-weight: $siteTitle__fontWeight;
+  font-size: rem( $site-title--font-size );
+  font-weight: $site-title--font-weight;
   line-height: 1.2;
 
   a,
   a:hover,
   a:focus {
-    color: $siteTitle__linkColor;
+    color: $site-title--link-color;
     text-decoration: none;
   }
 
@@ -43,7 +43,7 @@
     background-position: center !important;
     background-size: contain !important;
     float: left;
-    min-height: $headerImage_minHeight;
+    min-height: $header-image--min-height;
     width: 100%;
   }
 }

@@ -3,18 +3,18 @@
 input,
 select,
 textarea {
-  background-color: $input__backgroundColor;
-  border: 1px solid $input__borderColor;
-  color: $input__textColor;
-  font-size: rem( $input__fontSize );
-  font-weight: $input__fontWeight;
+  background-color: $input--background-color;
+  border: 1px solid $input--border-color;
+  color: $input--text-color;
+  font-size: rem( $input--font-size );
+  font-weight: $input--font-weight;
   padding: 16px;
   width: 100%;
 }
 
 input:focus,
 textarea:focus {
-  border: 1px solid $input__borderFocusColor;
+  border: 1px solid $input--border-focus-color;
   outline: none;
 }
 
@@ -25,10 +25,10 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-  color: $input__placeholder__textColor;
+  color: $input--placeholder--text-color;
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: $input__placeholder__textColor;
+  color: $input--placeholder--text-color;
 }

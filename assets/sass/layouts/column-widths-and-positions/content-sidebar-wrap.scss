@@ -5,14 +5,14 @@
   .content-sidebar-sidebar &,
   .sidebar-content-sidebar &,
   .sidebar-sidebar-content & {
-    width: $contentBothSidebarsWrap__width;
+    width: $content-both-sidebars-wrap--width;
 
     @media only screen and (max-width: $larger-screen) {
-      width: $contentBothSidebarsWrap__largerScreen__width;
+      width: $content-both-sidebars-wrap--width-larger-screen;
     }
 
     @media only screen and (max-width: $large-screen) {
-      width: $contentBothSidebarsWrap__largeScreen__width;
+      width: $content-both-sidebars-wrap--width-large-screen;
     }
   }
 

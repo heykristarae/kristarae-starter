@@ -10,7 +10,7 @@ table {
 }
 
 tbody {
-  border-bottom: 1px solid $table__body__borderColor;
+  border-bottom: 1px solid $table-body--border-color;
 }
 
 td,
@@ -19,7 +19,7 @@ th {
 }
 
 td {
-  border-top: 1px solid $table__cell__borderColor;
+  border-top: 1px solid $table-cell--border-color;
   padding: 6px;
 }
 

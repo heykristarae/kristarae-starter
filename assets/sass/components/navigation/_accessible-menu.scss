@@ -18,10 +18,10 @@
   display: none;
   visibility: hidden;
 
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: $medium-screen) {
     border-width: 0;
-    background-color: $toggle__backgroundColor;
-    color: $toggle__color;
+    background-color: $toggle--background-color;
+    color: $toggle--color;
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -30,10 +30,10 @@
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
 
   .menu-toggle {
-    border-top: 1px solid $toggle__borderColor;
+    border-top: 1px solid $toggle--border-color;
     line-height: 20px;
     position: relative;
     right: 0;

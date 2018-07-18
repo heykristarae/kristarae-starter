@@ -22,8 +22,8 @@
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
-  color: $searchInput__textColor;
-  background: $searchInput__backgroundColor;
+  color: $search-input--text-color;
+  background: $search-input--background-color;
   z-index: 100000;
   /* Above WP toolbar. */
   text-decoration: none;

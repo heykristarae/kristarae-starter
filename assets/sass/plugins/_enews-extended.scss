@@ -2,7 +2,7 @@
 --------------------------------------------- */
 
 .sidebar .enews-widget {
-  background-color: $enews__backgroundColor;
+  background-color: $enews--background-color;
 
   &,
   .widget-title {
@@ -12,25 +12,25 @@
   input {
     &,
     &:focus {
-      border: 1px solid $enews__input__borderColor;
+      border: 1px solid $enews__input--border-color;
     }
 
     &[type="submit"] {
-      background-color: $enews__buttonColor;
-      color: $enews__buttonTextColor;
+      background-color: $enews__button--color;
+      color: $enews__button--text-color;
     }
 
     &:hover[type="submit"],
     &:focus[type="submit"] {
-      background-color: $enews__buttonHoverColor;
-      color: $enews__buttonTextHoverColor;
+      background-color: $enews__button--hover-color;
+      color: $enews__button--text-hover-color;
     }
   }
 }
 
 .enews-widget {
   input {
-    font-size: rem( $enews__fontSize );
+    font-size: rem( $enews--font-size );
     margin-bottom: 16px;
 
     &[type="submit"] {

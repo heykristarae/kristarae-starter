@@ -3,11 +3,11 @@
 //===================
 
 .sidebar .widget-title a {
-  color: $sidebar__widgetTitle__linkColor;
+  color: $sidebar__widgetTitle--link-color;
   text-decoration: none;
 }
 
 .widget-title {
-  font-size: rem( $widgetTitle__fontSize );
+  font-size: rem( $widget-title--font-size );
   margin-bottom: 20px;
 }

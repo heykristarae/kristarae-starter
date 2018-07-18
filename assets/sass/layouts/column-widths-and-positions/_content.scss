@@ -2,31 +2,31 @@
 
 .content {
   float: right;
-  width: $content__width;
+  width: $content--width;
 
   @media only screen and (max-width: $larger-screen) {
-    width: $content__largerScreen__width;
+    width: $content--width-larger-screen;
   }
 
   @media only screen and (max-width: $large-screen) {
-    width: $content__largeScreen__width;
+    width: $content--width-large-screen;
   }
 
   @media only screen and (max-width: $medium-screen) {
-    max-width: $content__mediumScreen__width;
+    max-width: $content--width-medium-screen;
   }
 
   .content-sidebar-sidebar &,
   .sidebar-content-sidebar &,
   .sidebar-sidebar-content & {
-    width: $contentBothSidebars__width;
+    width: $content-both-sidebars--width;
 
     @media only screen and (max-width: $larger-screen) {
-      width: $contentBothSidebars__largerScreen__width;
+      width: $content-both-sidebars--larger-screen--width;
     }
 
     @media only screen and (max-width: $large-screen) {
-      width: $contentBothSidebars__largeScreen__width;
+      width: $content-both-sidebars--width-large-screen;
     }
   }
 

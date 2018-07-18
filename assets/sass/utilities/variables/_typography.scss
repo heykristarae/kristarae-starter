@@ -3,113 +3,113 @@
 //=================================
 
 // Base typography
-$html__fontSize: 62.5%; /* 10px browser default */
-$base__fontFamily: "Source Sans Pro", sans-serif;
-$base__fontSize: 20;
-$base__fontSize__smallScreen: 18;
-$base__lineHeight: 1.625;
-$baseDiv__fontSize: 2em;
-$baseDiv__fontSize__smallScreen: 1.8rem;
+$html--font-size: 62.5%; /* 10px browser default */
+$base--font-family: "Source Sans Pro", sans-serif;
+$base--font-size: 20;
+$base--font-size--small-screen: 18;
+$base--line-height: 1.625;
+$base__div--font-size: 2em;
+$base__div--font-size--small-screen: 1.8rem;
 
 // Headings
-$headings__fontFamily: $baseFontFamily;
-$headings__fontWeight: 600;
-$headings__letterSpacing: 0;
-$headings__lineHeight: 1.2;
+$headings--font-family: $baseFontFamily;
+$headings--font-weight: 600;
+$headings--letter-spacing: 0;
+$headings--line-height: 1.2;
 
-$h1__fontFamily: $headings__fontFamily;
-$h1__fontWeight: $headings__fontWeight;
-$h1__fontSize: 36;
-$h1__letterSpacing: $headings__letterSpacing;
-$h1__lineHeight: $headings__lineHeight;
+$h1--font-family: $headings--font-family;
+$h1--font-weight: $headings--font-weight;
+$h1--font-size: 36;
+$h1--letter-spacing: $headings--letter-spacing;
+$h1--line-height: $headings--line-height;
 
-$h2__fontFamily: $headings__fontFamily;
-$h2__fontWeight: $headings__fontWeight;
-$h2__fontSize: 30;
-$h2__letterSpacing: $headings__letterSpacing;
-$h2__lineHeight: $headings__lineHeight;
+$h2--font-family: $headings--font-family;
+$h2--font-weight: $headings--font-weight;
+$h2--font-size: 30;
+$h2--letter-spacing: $headings--letter-spacing;
+$h2--line-height: $headings--line-height;
 
-$h3__fontFamily: $headings__fontFamily;
-$h3__fontWeight: $headings__fontWeight;
-$h3__fontSize: 24;
-$h3__letterSpacing: $headings__letterSpacing;
-$h3__lineHeight: $headings__lineHeight;
+$h3--font-family: $headings--font-family;
+$h3--font-weight: $headings--font-weight;
+$h3--font-size: 24;
+$h3--letter-spacing: $headings--letter-spacing;
+$h3--line-height: $headings--line-height;
 
-$h4__fontFamily: $headings__fontFamily;
-$h4__fontWeight: $headings__fontWeight;
-$h4__fontSize: 20;
-$h4__letterSpacing: $headings__letterSpacing;
-$h4__lineHeight: $headings__lineHeight;
+$h4--font-family: $headings--font-family;
+$h4--font-weight: $headings--font-weight;
+$h4--font-size: 20;
+$h4--letter-spacing: $headings--letter-spacing;
+$h4--line-height: $headings--line-height;
 
-$h5__fontFamily: $headings__fontFamily;
-$h5__fontWeight: $headings__fontWeight;
-$h5__fontSize: 18;
-$h5__letterSpacing: $headings__letterSpacing;
-$h5__lineHeight: $headings__lineHeight;
+$h5--font-family: $headings--font-family;
+$h5--font-weight: $headings--font-weight;
+$h5--font-size: 18;
+$h5--letter-spacing: $headings--letter-spacing;
+$h5--line-height: $headings--line-height;
 
-$h6__fontFamily: $headings__fontFamily;
-$h6__fontWeight: $headings__fontWeight;
-$h6__fontSize: 16;
-$h6__letterSpacing: $headings__letterSpacing;
-$h6__lineHeight: $headings__lineHeight;
+$h6--font-family: $headings--font-family;
+$h6--font-weight: $headings--font-weight;
+$h6--font-size: 16;
+$h6--letter-spacing: $headings--letter-spacing;
+$h6--line-height: $headings--line-height;
 
 // Elements
-$blockquote__fontSize: 30;
+$blockquote--font-size: 30;
 
 // Form elements
-$input__fontSize: 18;
-$input__fontWeight: 400;
+$input--font-size: 18;
+$input--font-weight: 400;
 
 // Buttons
-$button__fontSize: 16;
+$button--font-size: 16;
 
 // Header
-$siteTitle__fontSize: 30;
-$siteTitle__fontWeight: 700;
+$site-title--font-size: 30;
+$site-title--font-weight: 700;
 
-$siteDescription__fontSize: 16;
-$siteDescription__fontWeight: 400;
+$site-description--font-size: 16;
+$site-description--font-weight: 400;
 
 
 // Navigation
-$nav__fontSize: 16;
-$nav__fontWeight: 600;
-$submenu__fontSize: 14;
-$pagination__fontSize: 16;
-$pagination__fontWeight: 600;
+$nav--font-size: 16;
+$nav--font-weight: 600;
+$submenu--font-size: 14;
+$pagination--font-size: 16;
+$pagination--font-weight: 600;
 
 
 // Entry Content
-$entryMeta__fontSize: 16;
-$entryMeta__header__fontSize: 16;
-$entryMeta__footer__fontSize: 16;
+$entry-meta--font-size: 16;
+$entry-header__entry-meta--font-size: 16;
+$entry-footer__entry-meta--font-size: 16;
 
-$entryTitle__fontSize: 36;
+$entry-title--font-size: 36;
 
 
 // Comments
-$comments_fontSize: 16;
+$comments--font-size: 16;
 
 
 // Widgets
-$widgetTitle__fontSize: 18;
+$widget-title--font-size: 18;
 
-$featuredContent__entryTitle__fontSize: 20;
+$featured-content__entry-title--font-size: 20;
 
 
 // Plugins
-$enews__fontSize: 16;
+$enews--font-size: 16;
 
 
 // General Components
-$authorbox__fontSize: 18;
-$authorbox__title__fontSize: 20;
-$breadrumb__fontSize: 16;
-$afterEntry__fontSize: 18;
-$archive__title__fontSize: 18;
-$archiveDescription__fontSize: 18;
+$author-box--font-size: 18;
+$author-box__title--font-size: 20;
+$breadrumb--font-size: 16;
+$after-entry--font-size: 18;
+$archive-title--font-size: 18;
+$archive-description--font-size: 18;
 
 
 // Footer
-$siteFooter__fontSize: 16;
-$footerWidgets__fontSize: 18;
+$site-footer--font-size: 16;
+$footer-widgets--font-size: 18;

@@ -26,20 +26,20 @@
   }
 
   a {
-    background-color: $pagination_backgroundColor;
-    color: $pagination_linkColor;
+    background-color: $pagination--background-color;
+    color: $pagination--link-color;
     cursor: pointer;
     display: inline-block;
     font-size: rem( 16 );
-    font-weight: $pagination__fontWeight;
+    font-weight: $pagination--font-weight;
     padding: 8px 12px;
     text-decoration: none;
 
     &:hover,
     &:focus,
     .active & {
-      background-color: $pagination_backgroundHoverColor;
-      color: $pagination_linkHoverColor;
+      background-color: $pagination--background-hover-color;
+      color: $pagination--link-hover-color;
     }
   }
 }

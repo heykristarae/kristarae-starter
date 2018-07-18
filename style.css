@@ -780,7 +780,7 @@ img.alignright {
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $medium-screen) {
     .site-inner,
     .wrap {
         max-width: 800px;
@@ -812,7 +812,7 @@ img.alignright {
 
 /* ## Column Widths and Positions
 --------------------------------------------- */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .content,
     .content-sidebar-sidebar .content,
     .content-sidebar-sidebar .content-sidebar-wrap,
@@ -1054,7 +1054,7 @@ img.alignright {
     padding: 20px 0;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .site-header .wrap {
         padding-left: 5%;
         padding-right: 5%;
@@ -1069,7 +1069,7 @@ img.alignright {
     width: 300px;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .title-area {
         width: 100%;
         text-align: center;
@@ -1081,7 +1081,7 @@ img.alignright {
     width: 100%;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .site-description,
     .site-header .title-area,
     .site-header .widget-area,
@@ -1122,7 +1122,7 @@ img.alignright {
     padding: 0;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .header-image .title-area {
         float: none;
     }
@@ -1156,7 +1156,7 @@ img.alignright {
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .site-header .widget-area {
         width: 100%;
     }
@@ -1173,7 +1173,7 @@ img.alignright {
     width: 100%;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .genesis-nav-menu {
         text-align: center;
     }
@@ -1271,7 +1271,7 @@ img.alignright {
     visibility: hidden;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .sub-menu-toggle,
     .menu-toggle {
         border-width: 0;
@@ -1285,7 +1285,7 @@ img.alignright {
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .sub-menu-toggle {
         float: right;
         padding: 10px;
@@ -1406,7 +1406,7 @@ img.alignright {
     padding: 0 20px 10px;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .js .genesis-nav-menu .sub-menu, .js .genesis-nav-menu .sub-menu a {
         width: 100%;
     }
@@ -1751,7 +1751,7 @@ p.entry-meta {
     margin: 12px auto 0;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .site-header .search-form {
         float: none;
         margin: 16px auto;
@@ -1798,7 +1798,7 @@ p.entry-meta {
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .footer-widgets-1,
     .footer-widgets-2,
     .footer-widgets-3 {
@@ -1821,7 +1821,7 @@ p.entry-meta {
     float: left;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: $medium-screen) {
     .footer-widgets-1,
     .footer-widgets-2 {
         margin: 0 auto 40px;

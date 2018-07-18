@@ -6,126 +6,123 @@ $white: #fff;
 $black: #000;
 $gray: #eee;
 
-$primary__color: #fe0e7b;
-$secondary__color: #feb142;
+$primary-color: #fe0e7b;
+$secondary-color: #feb142;
 
-$link__color: $primary_color;
-$link__hoverColor: $secondary_color;
+$link--color: $primary_color;
+$link--hover-color: $secondary_color;
 
-$base__color: $black;
-$body__backgroundColor: $white;
+$base-color: $black;
+$body--background-color: $white;
 
 // Form elements
-$input__backgroundColor: $white;
-$input__textColor: $black;
-$input__borderColor: #ddd;
-$input__borderFocusColor: $input__borderColor;
-$input__placeholder__textColor: $black;
+$input--background-color: $white;
+$input--text-color: $black;
+$input--border-color: #ddd;
+$input--border-focus-color: $input--border-color;
+$input--placeholder--text-color: $black;
 
 // Buttons
 
-$button__backgroundColor: $primary__color;
-$button__backgroundTextColor: $white;
-$button__backgroundHoverColor: $secondary__color;
-$button__backgroundHoverTextColor: $white;
-$button__disabled__backgroundColor: $gray;
-$button__disabled__backgroundTextColor: #777;
+$button--background-color: $primary-color;
+$button--background-text-color: $white;
+$button--background-hover-color: $secondary-color;
+$button--background-hover-text-color: $white;
+$button--disabled--background-color: $gray;
+$button--disabled--background-text-color: #777;
 
 // Elements
-$searchInput__backgroundColor: $input__backgroundColor;
-$searchInput__textColor: $input__textColor;
+$search-input--background-color: $input--background-color;
+$search-input--text-color: $input--text-color;
 
-$hr__borderColor: $gray;
+$hr--border-color: $gray;
 
-$gallery__borderColor: $gray;
-$gallery__borderHoverColor: #999;
+$gallery--border-color: $gray;
+$gallery--border-hover-color: #999;
 
-$table__body__borderColor: $gray;
-$table__cell__borderColor: $gray;
+$table-body--border-color: $gray;
+$table-cell--border-color: $gray;
 
 // Buttons
-$button__backgroundColor: $primary__color;
-$button__backgroundHoverColor: $secondary__color;
-$button__textColor: $white;
-$button__textHoverColor: $white;
+$button--background-color: $primary-color;
+$button--background-hover-color: $secondary-color;
+$button--text-color: $white;
+$button--text-hover-color: $white;
 
 
 // Header
-$siteHeader_backgroundColor: $white;
-$siteTitle__linkColor: $black;
+$site-header--background-color: $white;
+$site-title--link-color: $black;
 
 
 // Navigation Colors
-$nav__linkColor: $black;
-$nav__linkHoverColor: #c3251d;
+$nav--linkColor: $black;
+$nav--link-hover-color: $primary-color;
 
-$subMenu__linkBackgroundColor: $white;
-$subMenu__borderColor: $gray;
+$submenu--link-background-color: $white;
+$submenu--border-color: $gray;
 
-$primaryNav__linkColor: $black;
-$primaryNav__backgroundColor: $white;
-$primaryNav__borderColor: $gray;
+$primary-nav--link-color: $black;
+$primary-nav--background-color: $white;
+$primary-nav--border-color: $gray;
 
-$secNav__linkColor: $black;
-$secNav__linkHoverColor: $nav__linkHoverColor;
-$secNav__backgroundColor: $white;
-$secNav__borderColor: $gray;
+$secNav--linkColor: $black;
+$secNav--link-hover-color: $nav--link-hover-color;
+$secNav--background-color: $white;
+$secNav--border-color: $gray;
 
-$jsNav__backgroundColor: $white;
-$jsNav__linkHoverColor: $black;
-$jsNav__linkFocusColor: #c3251d;
+$jsNav--background-color: $white;
+$jsNav--link-hover-color: $black;
+$jsNav--link-focus-color: $primary-color;
 
-$toggle__backgroundColor: $white;
-$toggle__color: $black;
-$toggle__borderColor: $gray;
+$toggle--background-color: $white;
+$toggle--color: $black;
+$toggle--border-color: $gray;
 
-$pagination_backgroundColor: $white;
-$pagination_backgroundHoverColor: #c3251d;
-$pagination_linkColor: $black;
-$pagination_linkHoverColor: $white;
+$pagination--background-color: $white;
+$pagination--background-hover-color: $primary-color;
+$pagination--link-color: $black;
+$pagination--link-hover-color: $white;
 
 
 // Entry Content
 
-$entry__backgroundColor: $white;
-
-$entryMeta__footer__borderColor: $gray;
-
-$entryTitle_linkColor: $black;
-$entryTitle_linkHoverColor: #c3251d;
-
-$code__backgroundColor: $black;
-$code__color: $gray;
+$entry--background-color: $white;
+$entry-footer__meta--border-color: $gray;
+$entry-title--link-color: $black;
+$entry-title--link-hover-color: $primary-color;
+$code--background-color: $black;
+$code--color: $gray;
 
 
 // Comments
 
-$comments_backgroundColor: $white;
+$comments--background-color: $white;
 
 
 // Widgets
 
-$sidebar__widgetTitle__linkColor: $black;
+$sidebar__widgetTitle--link-color: $black;
 
 
 // Plugins
 
-$enews__input__borderColor: $white;
-$enews__backgroundColor: $gray;
-$enews__buttonColor: $button__backgroundColor;
-$enews__buttonHoverColor: $button__backgroundHoverColor;
-$enews__buttonTextColor: $button__textColor;
-$enews__buttonTextHoverColor: $button__textHoverColor;
+$enews__input--border-color: $white;
+$enews--background-color: $gray;
+$enews__button--color: $button--background-color;
+$enews__button--hover-color: $button--background-hover-color;
+$enews__button--text-color: $button--text-color;
+$enews__button--text-hover-color: $button--text-hover-color;
 
 // General Components
 
-$authorbox__backgroundColor: $white;
-$breadrumb__backgroundColor: $white;
-$afterEntry__backgroundColor: $white;
-$archiveDescription__backgroundColor: $white;
+$author-box--background-color: $white;
+$breadrumb--background-color: $white;
+$after-entry--background-color: $white;
+$archive-description--background-color: $white;
 
 // Footer
 
-$siteFooter__backgroundColor: $white;
-$siteFooter__borderColor: $gray;
-$footerWidgets__backgroundColor: $white;
+$site-footer--background-color: $white;
+$site-footer--border-color: $gray;
+$footer-widgets--background-color: $white;

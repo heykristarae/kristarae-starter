@@ -7,11 +7,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: $button__backgroundColor;
+  background-color: $button--background-color;
   border: 0;
-  color: $button__backgroundTextColor;
+  color: $button--background-text-color;
   cursor: pointer;
-  font-size: rem( $button__fontSize );
+  font-size: rem( $button--font-size );
   font-weight: 700;
   padding: 16px 24px;
   text-decoration: none;
@@ -29,13 +29,13 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-  background-color: $button__backgroundHoverColor;
-  color: $button__backgroundHoverTextColor;
+  background-color: $button--background-hover-color;
+  color: $button--background-hover-text-color;
 }
 
 .entry-content .button:hover,
 .entry-content .button:focus {
-  color: $button__backgroundHoverColor;
+  color: $button--background-hover-color;
 }
 
 .button {
@@ -61,9 +61,9 @@ input[type="submit"].small {
   input[type="reset"]:disabled:hover,
   input[type="submit"]:disabled,
   input[type="submit"]:disabled:hover {
-    background-color: $button__disabled__backgroundColor;
+    background-color: $button--disabled--background-color;
     border-width: 0;
-    color: $button__disabled__backgroundTextColor;
+    color: $button--disabled--background-text-color;
     cursor: not-allowed;
   }
 }

@@ -2,14 +2,14 @@
 --------------------------------------------- */
 
 .nav-secondary {
-  background-color: $secNav__backgroundColor;
-  border-top: 1px solid $secNav__borderColor;
+  background-color: $secNav--background-color;
+  border-top: 1px solid $secNav--border-color;
 
   a {
-    color: $secNav__linkColor;
+    color: $secNav--linkColor;
 
     &:hover, &:focus {
-      color: $secNav__linkHoverColor;
+      color: $secNav--link-hover-color;
     }
   }
 }

@@ -3,8 +3,8 @@
 //=================
 
 .breadcrumb {
-  background-color: $breadrumb__backgroundColor;
-  font-size: rem( $breadrumb__fontSize );
+  background-color: $breadrumb--background-color;
+  font-size: rem( $breadrumb--font-size );
   margin-bottom: 1px;
   padding: 12px 30px;
 }
