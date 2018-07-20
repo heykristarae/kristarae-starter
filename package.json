@@ -19,14 +19,22 @@
   },
   "homepage": "https://github.com/heykristarae/kristarae-starter#readme",
   "dependencies": {
-    "npm": "^6.2.0",
-    "sass-rem": "^2.0.1"
+    "npm": "^6.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
     "bourbon": "^4.2.6",
     "bourbon-neat": "^1.7.2",
+    "css-mqpacker": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
     "sass-rem": "^2.0.1"
   }
 }

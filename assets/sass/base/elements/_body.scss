@@ -17,7 +17,7 @@ body {
   margin: 0;
   /* Chro__me fix */
 
-  @media screen and (max-width: $small-screen) {
+  @media only screen and (max-width: $small-screen) {
       @include rem( font-size, $base--font-size--small-screen );
   }
 
