@@ -5,7 +5,7 @@
 .entry-header {
   .entry-meta {
     @include rem( font-size, $entry-header__entry-meta--font-size );
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .entry-categories,
