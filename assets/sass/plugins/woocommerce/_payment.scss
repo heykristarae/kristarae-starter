@@ -1,0 +1,36 @@
+/* WooCommerce Payment
+---------------------------------------------------------------------------------------------------- */
+
+#payment {
+  .woocommerce-cart &,
+  .woocommerce-checkout &,
+  #add_payment_method & {
+    background-color: $wc__payment--background-color;
+    border-radius: 0;
+    padding: 30px;
+  }
+
+  div.payment_box {
+    .woocommerce-cart &,
+    .woocommerce-checkout &,
+    #add_payment_method & {
+      background-color: $wc__payment--background-color;
+    }
+
+    &::before {
+      .woocommerce-cart &,
+      .woocommerce-checkout &,
+      #add_payment_method & {
+        display: none;
+      }
+    }
+  }
+
+  ul.payment_methods {
+    .woocommerce-cart &,
+    .woocommerce-checkout &,
+    #add_payment_method & {
+      border-color: $wc__payment--background-color;
+    }
+  }
+}

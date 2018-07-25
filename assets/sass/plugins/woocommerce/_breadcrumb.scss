@@ -1,0 +1,19 @@
+/* WooCommerce Breadcrumb
+---------------------------------------------------------------------------------------------------- */
+
+.woocommerce .woocommerce-breadcrumb {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: $wc__breadcrumb--text-color;
+
+  a {
+    color: $wc__breadcrumb--link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: $wc__breadcrumb--link-hover-color;
+    }
+  }
+}

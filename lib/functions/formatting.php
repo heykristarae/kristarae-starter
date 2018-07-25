@@ -1,6 +1,6 @@
 <?php
 /**
- * Description
+ * Takes care of formatting
  *
  * @package KristaRae\Starter
  * @since   1.0.0

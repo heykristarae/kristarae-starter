@@ -1,6 +1,6 @@
 <?php
 /**
- * Description
+ * Sets up the child theme
  *
  * @package KristaRae\Starter
  * @since   1.0.0
@@ -23,8 +23,10 @@ function setup_child_theme() {
 	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
 	unregister_genesis_callbacks();
 	adds_theme_supports();
+	unregister_layouts();
 	adds_new_image_sizes();
 }
+
 /**
  * Unregister Genesis callbacks.  We do this here because the child theme loads before Genesis.
  *
@@ -34,7 +36,24 @@ function setup_child_theme() {
  */
 function unregister_genesis_callbacks() {
 	unregister_menu_callbacks();
+
 }
+
+/**
+ * Unregister default Genesis layouts.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function unregister_layouts() {
+	unregister_sidebar( 'sidebar-alt' );
+
+	genesis_unregister_layout( 'content-sidebar-sidebar' );
+	genesis_unregister_layout( 'sidebar-content-sidebar' );
+	genesis_unregister_layout( 'sidebar-sidebar-content' );
+}
+
 /**
  * Adds theme supports to the site.
  *
@@ -61,17 +80,17 @@ function adds_theme_supports() {
 		),
 		'genesis-responsive-viewport'     => null,
 		'custom-header'                   => array(
-			'width'           => 600,
-			'height'          => 160,
+			'width'           => CUSTOM_HEADER_WIDTH,
+			'height'          => CUSTOM_HEADER_HEIGHT,
 			'header-selector' => '.site-title a',
 			'header-text'     => false,
 			'flex-height'     => true,
 		),
 		'custom-background'               => null,
 		'genesis-after-entry-widget-area' => null,
-		'genesis-footer-widgets'          => 3,
+		'genesis-footer-widgets'          => FOOTER_WIDGET_AREAS,
 		'genesis-menus'                   => array(
-			'primary'   => __( 'After Header Menu', CHILD_TEXT_DOMAIN ),
+			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
 			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
 		),
 	);
@@ -79,6 +98,7 @@ function adds_theme_supports() {
 		add_theme_support( $feature, $args );
 	}
 }
+
 /**
  * Adds new image sizes.
  *
@@ -99,6 +119,7 @@ function adds_new_image_sizes() {
 		add_image_size( $name, $args['width'], $args['height'], $crop );
 	}
 }
+
 add_filter( 'genesis_theme_settings_defaults', __NAMESPACE__ . '\set_theme_settings_defaults' );
 /**
  * Set theme settings defaults.
@@ -114,6 +135,7 @@ function set_theme_settings_defaults( array $defaults ) {
 	$defaults = wp_parse_args( $config, $defaults );
 	return $defaults;
 }
+
 add_action( 'after_switch_theme', __NAMESPACE__ . '\update_theme_settings_defaults' );
 /**
  * Sets the theme setting defaults.
@@ -129,6 +151,7 @@ function update_theme_settings_defaults() {
 	}
 	update_option( 'posts_per_page', $config['blog_cat_num'] );
 }
+
 /**
  * Get the theme settings defaults.
  *

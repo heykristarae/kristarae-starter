@@ -1,0 +1,8 @@
+// WooCommerce styles
+
+@import 'bourbon';
+@import 'neat';
+@import '../../node_modules/sass-rem/rem';
+
+@import 'utilities/variables/index';
+@import 'plugins/woocommerce/index';

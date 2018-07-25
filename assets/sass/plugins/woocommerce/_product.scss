@@ -1,0 +1,38 @@
+/* WooCommerce Product
+---------------------------------------------------------------------------------------------------- */
+
+.woocommerce {
+  div.product {
+    p.price,
+    span.price {
+      color: $wc__price--text-color;
+      line-height: 1.5;
+    }
+
+    form.cart {
+      .button {
+        line-height: 1.5;
+      }
+
+      .variations {
+        table-layout: fixed;
+      }
+    }
+  }
+
+  .woocommerce-variation-price {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: $max-width-small-screen) {
+  .woocommerce ul.products li.product,
+  .woocommerce ul.products li.product .button,
+  .woocommerce .woocommerce-ordering,
+  .woocommerce-page ul.products li.product,
+  .woocommerce-page ul.products li.product .button,
+  .woocommerce-page .woocommerce-ordering {
+    margin-right: 0;
+    width: 100%;
+  }
+}

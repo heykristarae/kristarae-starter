@@ -4,6 +4,7 @@
 
 $rem-fallback: true;
 
+
 // Base typography
 $rem-baseline: 10px;
 $html--font-size: 62.5%;
@@ -14,6 +15,7 @@ $base--font-size--small-screen: 18px;
 $base--line-height: 1.625;
 $base__div--font-size: 2em;
 $base__div--font-size--small-screen: 1.8rem;
+
 
 // Headings
 $headings--font-family: $base--font-family;
@@ -57,15 +59,19 @@ $h6--font-size: 16px;
 $h6--letter-spacing: $headings--letter-spacing;
 $h6--line-height: $headings--line-height;
 
+
 // Elements
 $blockquote--font-size: 30px;
+
 
 // Form elements
 $input--font-size: 18px;
 $input--font-weight: 400;
 
+
 // Buttons
 $button--font-size: 16px;
+
 
 // Header
 $site-title--font-size: 30px;
@@ -73,6 +79,8 @@ $site-title--font-weight: 700;
 
 $site-description--font-size: 16px;
 $site-description--font-weight: 400;
+
+$site-banner--font-size: 18px;
 
 
 // Navigation
@@ -101,10 +109,6 @@ $widget-title--font-size: 18px;
 $featured-content__entry-title--font-size: 20px;
 
 
-// Plugins
-$enews--font-size: 16px;
-
-
 // General Components
 $author-box--font-size: 18px;
 $author-box__title--font-size: 20px;
@@ -117,3 +121,19 @@ $archive-description--font-size: 18px;
 // Footer
 $site-footer--font-size: 16px;
 $footer-widgets--font-size: 18px;
+
+
+//*** Plugins
+
+// Genesis eNews Extended
+$enews--font-size: 16px;
+
+
+// WooCommerce
+$wc__price-slider-button--font-size: 16px;
+$wc__recent-reviews-review--font-size: 12px;
+$wc__account-address-title--font-size: 26px;
+$wc__cart-table-cell--font-size: 18px;
+$wc__cart-table-coupon-input--font-size: 18px;
+$wc__form-quantity--font-size: 20px;
+$wc__pagination-link--font-size: 16px;

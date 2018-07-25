@@ -2,24 +2,13 @@
 /**
  * Customizer helper functions
  *
- * @package KristaRae\Starter\Customizer
+ * @package KristaRae\Starter
  * @since   1.0.0
  * @author  Krista Rae LLC
  * @link    https://kristarae.co
  * @license GPL
  */
-namespace KristaRae\Starter\Customizer;
-
-/**
- * Get the settings prefix.
- *
- * @since 1.0.0
- *
- * @return string
- */
-function get_settings_prefix() {
-	return 'kr-starter';
-}
+namespace KristaRae\Starter;
 
 /**
  * Get default link color for Customizer.

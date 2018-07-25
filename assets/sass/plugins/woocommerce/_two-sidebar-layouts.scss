@@ -1,0 +1,31 @@
+/* Two Sidebar Layouts */
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs {
+  padding: 0;
+
+  li {
+    display: block;
+    margin: 0;
+    background-color: $wc__tabs--background-color;
+    border-bottom: 0;
+
+    &:last-child {
+      border-bottom: 1px solid $wc__tabs--border-color;
+    }
+
+    &.active {
+      border-bottom-color: $wc__tabs--border-color;
+
+      a::after {
+        content: "\f147";
+        float: right;
+        font-family: "dashicons";
+      }
+    }
+
+    a {
+      display: block;
+    }
+  }
+}

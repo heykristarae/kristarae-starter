@@ -5,6 +5,7 @@
 $white: #fff;
 $black: #000;
 $gray: #eee;
+$light-gray: #f5f5f5;
 
 $primary-color: #fe0e7b;
 $secondary-color: #feb142;
@@ -64,7 +65,6 @@ $submenu--border-color: $gray;
 
 $primary-nav--link-color: $black;
 $primary-nav--background-color: $white;
-$primary-nav--border-color: $gray;
 
 $secNav--linkColor: $black;
 $secNav--link-hover-color: $nav--link-hover-color;
@@ -104,16 +104,6 @@ $comments--background-color: $white;
 
 $sidebar__widgetTitle--link-color: $black;
 
-
-// Plugins
-
-$enews__input--border-color: $white;
-$enews--background-color: $gray;
-$enews__button--color: $button--background-color;
-$enews__button--hover-color: $button--background-hover-color;
-$enews__button--text-color: $button--text-color;
-$enews__button--text-hover-color: $button--text-hover-color;
-
 // General Components
 
 $author-box--background-color: $white;
@@ -126,3 +116,43 @@ $archive-description--background-color: $white;
 $site-footer--background-color: $white;
 $site-footer--border-color: $gray;
 $footer-widgets--background-color: $white;
+
+
+//*** Plugins
+
+// Genesis eNews Extended
+$enews__input--border-color: $white;
+$enews--background-color: $gray;
+$enews__button--color: $button--background-color;
+$enews__button--hover-color: $button--background-hover-color;
+$enews__button--text-color: $button--text-color;
+$enews__button--text-hover-color: $button--text-hover-color;
+
+// WooCommerce
+$wc__price-slider--background-color: $gray;
+$wc__ui-slider-range--background-color: $secondary-color;
+$wc__chosen-filter--color: $secondary-color;
+$wc__shopping-cart-widget-total--border-color: $gray;
+$wc__account-navigation--border-color: $gray;
+$wc__account-navigation--active-item--link-color: $black;
+$wc__breadcrumb--text-color: $black;
+$wc__breadcrumb--link-color: $wc__breadcrumb--text-color;
+$wc__breadcrumb--link-hover-color: $link--hover-color;
+$wc__shop-table-cell--border-color: $gray;
+$wc__message--background-color: $gray;
+$wc__message--border-color: $secondary-color;
+$wc__message-before--color: $secondary-color;
+$wc__payment--background-color: $gray;
+$wc__price--text-color: $secondary-color;
+$wc__tabs--border-color: $gray;
+$wc__tabs--background-color: $light-gray;
+$wc__tabs--link-color: $black;
+$wc__tabs--link-hover-color: $link--hover-color;
+$wc__review-comment--text-color: $gray;
+$wc__product-price-from--text-color: $black;
+$wc__product-price--text-color: $secondary-color;
+$wc__pagination-link--background-color: $light-gray;
+$wc__pagination-link--text-color: $black;
+$wc__pagination-link--background-hover-color: $black;
+$wc__pagination-link--text-hover-color: $white;
+$wc__onsale--background-color: $secondary-color;

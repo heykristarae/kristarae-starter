@@ -1,0 +1,73 @@
+/* WooCommerce Shop Page
+---------------------------------------------------------------------------------------------------- */
+
+.woocommerce {
+  .content .entry {
+    border-bottom: 0;
+  }
+
+  a.added_to_cart {
+    line-height: 1;
+  }
+
+  a.button.loading::after,
+  button.button.loading::after,
+  input.button.loading::after,
+  #respond input#submit.loading::after {
+    top: 1em;
+  }
+
+  ul.products li.product {
+    h3,
+    li.product .price .from {
+      color: $wc__product-price-from--text-color;
+    }
+
+    h3:hover,
+    .price {
+      color: $wc__product-price--text-color;
+    }
+
+    /* MS Edge Bug Fix */
+    a {
+      -webkit-transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+      -ms-transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+      transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+    }
+  }
+
+  nav.woocommerce-pagination {
+    clear: both;
+    margin: 40px 0;
+
+    ul,
+    ul li {
+      border: none;
+    }
+
+    ul li {
+      margin-left: 2px;
+      margin-right: 2px;
+
+      a,
+      span {
+        background-color: $wc__pagination-link--background-color;
+        color: $wc__pagination-link--text-color;
+        cursor: pointer;
+        display: inline-block;
+        @include rem( font-size, $wc__pagination-link--font-size );
+        font-weight: 600;
+        line-height: 1.625;
+        padding: 8px 12px;
+        text-decoration: none;
+      }
+
+      a:focus,
+      a:hover,
+      span.current {
+        background-color: $wc__pagination-link--background-hover-color;
+        color: $wc__pagination-link--text-hover-color;
+      }
+    }
+  }
+}

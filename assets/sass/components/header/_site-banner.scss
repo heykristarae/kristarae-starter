@@ -1,0 +1,16 @@
+/* ## Site banner
+--------------------------------------------- */
+
+.site-banner {
+  padding: 12px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  a {
+    @include rem( font-size, $site-banner--font-size );
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

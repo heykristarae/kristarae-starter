@@ -1,0 +1,8 @@
+/* Woo Recent Reviews
+-------------------------------------------------- */
+
+.woocommerce.widget_recent_reviews .reviewer {
+  @include rem( font-size, $wc__recent-reviews-review--font-size );
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

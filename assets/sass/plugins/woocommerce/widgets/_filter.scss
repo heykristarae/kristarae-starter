@@ -1,0 +1,33 @@
+/* Woo Filter
+-------------------------------------------------- */
+
+.woocommerce.widget_price_filter {
+  .price_slider_wrapper .ui-widget-content {
+    background-color: $wc__price-slider--background-color;
+  }
+
+  .ui-slider  {
+    .ui-slider-handle,
+    .ui-slider-range {
+      background-color: $wc__ui-slider-range--background-color;
+    }
+  }
+}
+
+.woocommerce {
+  .widget_layered_nav ul li.chosen a::before,
+  .widget_layered_nav_filters ul li a::before,
+  .widget_rating_filter ul li.chosen a::before {
+    color: $wc__chosen-filter--color;
+  }
+
+  .widget_price_filter .ui-slider .ui-slider-handle,
+  &.widget_price_filter .ui-slider .ui-slider-handle {
+    top: -.28em;
+  }
+
+  .widget_price_filter .price_slider_amount .button,
+  &.widget_price_filter .price_slider_amount .button {
+    @include rem( font-size, $wc__price-slider-button--font-size );
+  }
+}

@@ -2,13 +2,13 @@
 /**
  * Adds CSS from the Customizer options
  *
- * @package KristaRae\Starter\Customizer
+ * @package KristaRae\Starter
  * @since   1.0.0
  * @author  Krista Rae LLC
  * @link    https://kristarae.co
  * @license GPL
  */
-namespace KristaRae\Starter\Customizer;
+namespace KristaRae\Starter;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\build_inline_css_from_customizer_settings' );
 /**
@@ -18,13 +18,10 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\build_inline_css_from_custom
 * @since 1.0.0
 */
 function build_inline_css_from_customizer_settings() {
-	$prefix = get_settings_prefix();
-
-
 	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 
-	$color_link = get_theme_mod( $prefix . '_link_color', get_default_link_color() );
-	$color_accent = get_theme_mod( $prefix . '_accent_color', get_default_accent_color() );
+	$color_link = get_theme_mod( SETTINGS_PREFIX . '_link_color', get_default_link_color() );
+	$color_accent = get_theme_mod( SETTINGS_PREFIX . '_accent_color', get_default_accent_color() );
 
 	$css = '';
 

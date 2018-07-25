@@ -1,0 +1,25 @@
+/* Woo Shopping Cart
+-------------------------------------------------- */
+
+.woocommerce .widget_shopping_cart,
+.woocommerce.widget_shopping_cart {
+  ul.cart_list li {
+    padding-top: 15px;
+  }
+
+  .cart_list li a.remove {
+    top: 15px;
+  }
+
+  .total {
+    border-top: 1px solid $wc__shopping-cart-widget-total--border-color;
+  }
+
+  .buttons a {
+    margin-bottom: 5px;
+  }
+
+  .cart_list li.empty {
+    padding-left: 0;
+  }
+}

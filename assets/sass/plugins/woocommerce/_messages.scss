@@ -1,0 +1,26 @@
+/* WooCommerce Messages
+---------------------------------------------------------------------------------------------------- */
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  background-color: $wc__message--background-color;
+  border-top-color: $wc__message--border-color;
+}
+
+.woocommerce-error::before,
+.woocommerce-info::before,
+.woocommerce-message::before {
+  color: $wc__message-before--color;
+}
+
+div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricted-content-message {
+  width: 48%;
+}
+
+@media only screen and (max-width: $max-width-small-screen) {
+  .woocommerce-message .button.wc-forward {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

@@ -45,3 +45,27 @@ function secondary_menu_args( array $args ) {
 	return $args;
 
 }
+
+/**
+ * Defines responsive menu settings.
+ *
+ * @since 2.3.0
+ */
+function define_responsive_menu_settings() {
+
+	$settings = array(
+		'mainMenu'         => __( 'Menu', 'genesis-sample' ),
+		'menuIconClass'    => 'dashicons-before dashicons-menu',
+		'subMenu'          => __( 'Submenu', 'genesis-sample' ),
+		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
+		'menuClasses'      => array(
+			'combine' => array(
+				'.nav-primary',
+			),
+			'others'  => array(),
+		),
+	);
+
+	return $settings;
+
+}

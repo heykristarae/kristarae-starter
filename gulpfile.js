@@ -7,10 +7,12 @@ var gulp = require('gulp'),
     neat = require('bourbon-neat').includePaths,
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
+    postcssWc = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     //mqpacker = require('css-mqpacker'),  currently doesn't work for themes using max-width for media queries
     sourcemaps = require('gulp-sourcemaps'),
     cssMinify = require('gulp-cssnano'),
+    cssMinifyWc = require('gulp-cssnano'),
     sassLint = require('gulp-sass-lint'),
 
     // Utilities
@@ -37,7 +39,7 @@ function handleErrors() {
         sound: 'Sosumi' // See: https://github.com/mikaelbr/node-notifier#all-notification-options-with-their-defaults
     }).apply(this, args);
 
-    gutil.beep(); // Beep 'sosumi' again
+    // gutil.beep(); // Beep 'sosumi' again
 
     // Prevent the 'watch' task from stopping
     this.emit('end');
@@ -81,6 +83,36 @@ gulp.task('postcss', function() {
         .pipe(gulp.dest('./'));
 });
 
+gulp.task('postcssWc', function() {
+
+    return gulp.src('assets/sass/kristarae-woocommerce.scss')
+
+    //Error handling
+        .pipe(plumber({
+            errorHandler: handleErrors
+        }))
+
+        // Wrap tasks in a sourcemap
+        .pipe( sourcemaps.init() )
+
+        .pipe( sass({
+            includePaths: [].concat( bourbon, neat ),
+            errLogToConsole: true,
+            outputStyle: 'expanded' // Options: nested, expanded, compact, compressed
+        }))
+
+        .pipe( postcss([
+            autoprefixer({
+                browsers: ['last 2 version']
+            })
+        ]))
+
+        // creates the sourcemap
+        .pipe(sourcemaps.write())
+
+        .pipe(gulp.dest('./'));
+});
+
 gulp.task('cssMinify', ['postcss'], function() {
     return gulp.src('style.css')
 
@@ -99,11 +131,38 @@ gulp.task('cssMinify', ['postcss'], function() {
         }))
 });
 
+gulp.task('cssMinifyWc', ['postcssWc'], function() {
+    return gulp.src('kristarae-woocommerce.css')
+
+    //Error handling
+        .pipe(plumber({
+            errorHandler: handleErrors
+        }))
+
+        .pipe( cssMinify({
+            safe: true
+        }))
+        .pipe(rename('kristarae-woocommerce.min.css'))
+        .pipe(gulp.dest('./lib/components/woocommerce/'))
+        .pipe(notify({
+            message: 'WooCommerce styles are built.'
+        }))
+});
+
 gulp.task('sass:lint', ['cssMinify'], function() {
     gulp.src([
         'assets/sass/style.scss',
         '!assets/sass/base/html5-reset/_normalize.scss',
         '!assets/sass/utilities/animate/**/*.*'
+    ])
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
+});
+
+gulp.task('sass:lintWc', ['cssMinifyWc'], function() {
+    gulp.src([
+        'assets/sass/kristarae-woocommerce.scss'
     ])
         .pipe(sassLint())
         .pipe(sassLint.format())
@@ -123,3 +182,4 @@ gulp.task('watch', function() {
  */
 // gulp.task('scripts', [''])
 gulp.task('styles', ['sass:lint']);
+gulp.task('wc', ['sass:lintWc']);
