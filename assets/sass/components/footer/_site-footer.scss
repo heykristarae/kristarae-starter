@@ -12,4 +12,14 @@
   p {
     margin-bottom: 0;
   }
+
+  a {
+    color: $site-footer--link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $site-footer--link-hover-color;
+    }
+  }
 }

@@ -1,0 +1,62 @@
+/* # Footer Header Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widget-header {
+  background-color: $light-gray;
+  margin-top: 60px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+
+  .widget-wrap {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .widget-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
+
+  .enews {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $footer-widgets-header--enews--width;
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      padding-bottom: 15px;
+      padding-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: $footer-widgets-header--enews--p--width;
+    }
+
+    input[type=text],
+    input[type=email] {
+      width: 29%;
+    }
+
+    input[type=submit] {
+      background-color: $footer-widgets-header--enews--button-color;
+      width: 29%;
+    }
+
+    input[type=submit]:hover {
+      background-color: $footer-widgets-header--enews--button-hover-color;
+    }
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+
+  .footer-widget-header-container .enews input[type=text],
+  .footer-widget-header-container .enews input[type=email],
+  .footer-widget-header-container .enews input[type=submit] {
+    width: $footer-widgets-header--enews--fields--mobile-width;
+  }
+
+}

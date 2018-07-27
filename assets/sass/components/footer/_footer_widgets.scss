@@ -8,6 +8,23 @@
   padding: 60px 0;
 }
 
+a {
+  color: $footer-widgets--link-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $footer-widgets--link-hover-color;
+  }
+
+  .menu li {
+    float: left;
+    text-align: center;
+    width: 50%;
+  }
+}
+
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
