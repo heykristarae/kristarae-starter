@@ -1,0 +1,27 @@
+/* Category Block
+---------------------------------------------------------------------------- */
+
+.site-container {
+  .wp-block-categories {
+    margin-left: 0;
+    padding-left: 0;
+
+    ol,
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    &.aligncenter {
+      text-align: center;
+    }
+  }
+
+  .wp-block-categories-list.alignfull {
+    padding: 0 30px;
+  }
+}

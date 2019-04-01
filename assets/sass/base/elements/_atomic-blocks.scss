@@ -1,0 +1,22 @@
+/* Atomic Blocks
+---------------------------------------------------------------------------- */
+
+.ab-block-post-grid h2 a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 510px) {
+
+  .ab-block-container.alignfull {
+    &::before {
+      content: " ";
+      display: table;
+    }
+
+    &::after {
+      clear: both;
+      content: " ";
+      display: table;
+    }
+  }
+}

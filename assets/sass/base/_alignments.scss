@@ -47,3 +47,47 @@ a.alignright,
 img.alignright {
   margin: 0 0 24px 24px;
 }
+
+.wp-block-button,
+.wp-block-cover,
+.wp-block-image {
+
+  &.alignleft {
+    margin-right: 2em;
+  }
+
+  &.alignright {
+    margin-left: 2em;
+  }
+}
+
+
+
+.wp-block-image,
+.wp-block-embed {
+  &.alignwide,
+  &.alignfull {
+    margin-bottom: 30px;
+  }
+}
+
+.full-width-content .site-container .alignfull {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  max-width: 100vw;
+}
+
+.content-sidebar .site-container .alignfull,
+.sidebar-content .site-container .alignfull {
+  margin: 0 0 2em;
+  width: 100%;
+}
+
+@media only screen and (max-width: 510px) {
+
+  .wp-block-button.alignright {
+    float: left;
+    margin-left: 0;
+  }
+
+}

@@ -32,7 +32,6 @@ h2 {
 h3 {
   font-family: $h3--font-family;
   @include rem( font-size, $h3--font-size );
-  font-weight: $h3--font-weight;
   letter-spacing: $h3--letter-spacing;
   line-height: $h3--line-height;
 }
@@ -59,4 +58,13 @@ h6 {
   font-weight: $h6--font-weight;
   letter-spacing: $h6--letter-spacing;
   line-height: $h6--line-height;
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+  color: $heading--light-color;
 }

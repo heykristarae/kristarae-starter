@@ -1,0 +1,49 @@
+//
+// Block columns
+//=============================
+
+.site-container .wp-block-columns {
+  margin-bottom: 30px;
+
+  &.alignfull {
+    padding: 0 30px;
+  }
+}
+
+.entry .site-container .wp-block-columns {
+  @media only screen and (min-width: 600px) {
+      flex-wrap: nowrap;
+
+    &[class*="has-"] > * {
+      margin-right: 36px;
+      margin-left: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .entry .site-container .wp-block-columns .wp-block-column > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  .full-width-content .site-container .alignwide {
+    margin-left: -180px;
+    margin-right: -180px;
+    max-width: 1062px;
+    width: auto;
+  }
+
+}

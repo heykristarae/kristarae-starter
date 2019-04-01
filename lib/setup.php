@@ -79,19 +79,18 @@ function adds_theme_supports() {
 			'skip-links'
 		),
 		'genesis-responsive-viewport'     => null,
-		'custom-header'                   => array(
-			'width'           => CUSTOM_HEADER_WIDTH,
-			'height'          => CUSTOM_HEADER_HEIGHT,
-			'header-selector' => '.site-title a',
-			'header-text'     => false,
-			'flex-height'     => true,
-		),
 		'custom-background'               => null,
 		'genesis-after-entry-widget-area' => null,
 		'genesis-footer-widgets'          => FOOTER_WIDGET_AREAS,
 		'genesis-menus'                   => array(
 			'primary'   => __( 'Header Menu', CHILD_TEXT_DOMAIN ),
 			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )
+		),
+		'custom-logo'   => array(
+			'height'      => CUSTOM_HEADER_HEIGHT, // set to your dimensions
+			'width'       => CUSTOM_HEADER_WIDTH,
+			'flex-height' => true,
+			'flex-width'  => true,
 		),
 	);
 	foreach ( $config as $feature => $args ) {
@@ -168,4 +167,16 @@ function get_theme_settings_defaults() {
 		'posts_nav'                 => 'numeric',
 		'site_layout'               => 'content-sidebar',
 	);
+}
+
+/**
+ * Adds Gutenberg opt-in features and styling.
+ *
+ * @since 1.0.0
+ */
+add_action( 'after_setup_theme', __NAMESPACE__ . 'genesis_child_gutenberg_support' );
+function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
+
+	require_once get_stylesheet_directory() . '/lib/components/gutenberg/init.php';
+
 }
