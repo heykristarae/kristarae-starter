@@ -10,7 +10,7 @@
  */
 namespace KristaRae\Starter\Gutenberg;
 
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . 'genesis_sample_custom_gutenberg_css' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\genesis_sample_custom_gutenberg_css' );
 /**
  * Outputs front-end inline styles based on colors declared in config/block-editor-settings.php.
  *
@@ -48,11 +48,11 @@ CSS;
 	$css .= genesis_sample_inline_font_sizes();
 	$css .= genesis_sample_inline_color_palette();
 
-	wp_add_inline_style( CHILD_THEME_HANDLE . '-gutenberg', $css );
+	wp_add_inline_style( CHILD_TEXT_DOMAIN . '-gutenberg', $css );
 
 }
 
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . 'genesis_sample_custom_gutenberg_admin_css' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\genesis_sample_custom_gutenberg_admin_css' );
 /**
  * Outputs back-end inline styles based on colors declared in config/block-editor-settings.php.
  *
@@ -103,7 +103,7 @@ function genesis_sample_inline_font_sizes() {
 	$css               = '';
 	$editor_font_sizes = get_theme_support( 'editor-font-sizes' );
 
-	if ( ! $editor_font_sizes ) {
+	if ( ! $editor_font_sizes || count($editor_font_sizes) == 0 || !is_array($editor_font_sizes[0]) ) {
 		return '';
 	}
 
@@ -131,6 +131,10 @@ function genesis_sample_inline_color_palette() {
 	$css                   = '';
 	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
 	$editor_color_palette  = $block_editor_settings['editor-color-palette'];
+
+	if ( !is_array($editor_color_palette) ) {
+		return '';
+	}
 
 	foreach ( $editor_color_palette as $color_info ) {
 		$css .= <<<CSS

@@ -15,7 +15,7 @@ namespace KristaRae\Starter\Gutenberg;
  *
  * @since 1.1.0
  */
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . 'genesis_sample_block_editor_styles' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\genesis_sample_block_editor_styles' );
 function genesis_sample_block_editor_styles() {
 
 	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
@@ -29,7 +29,7 @@ function genesis_sample_block_editor_styles() {
 
 }
 
-add_filter( 'body_class', __NAMESPACE__ . 'genesis_sample_blocks_body_classes' );
+add_filter( 'body_class', __NAMESPACE__ . '\genesis_sample_blocks_body_classes' );
 /**
  * Adds body classes to help with block styling.
  *
@@ -96,7 +96,7 @@ add_theme_support(
 
 require_once get_stylesheet_directory() . '/lib/components/gutenberg/inline-styles.php';
 
-add_action( 'after_setup_theme', __NAMESPACE__ . 'genesis_sample_content_width', 0 );
+add_action( 'after_setup_theme', __NAMESPACE__ . '\genesis_sample_content_width', 0 );
 /**
  * Set content width to match the “wide” Gutenberg block width.
  */

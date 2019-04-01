@@ -174,7 +174,7 @@ function get_theme_settings_defaults() {
  *
  * @since 1.0.0
  */
-add_action( 'after_setup_theme', __NAMESPACE__ . 'genesis_child_gutenberg_support' );
+add_action( 'after_setup_theme', __NAMESPACE__ . '\genesis_child_gutenberg_support' );
 function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
 
 	require_once get_stylesheet_directory() . '/lib/components/gutenberg/init.php';
